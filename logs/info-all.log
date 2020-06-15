@@ -1,0 +1,158 @@
+2020-06-15 15:50:53.575 INFO [main]com.springboot_demo.springboot_demoApplication[logStarting:55] -Starting springboot_demoApplication on DESKTOP-19DVIFM with PID 11184 (D:\Workspaces\idea_demo\springboot_demo\target\classes started by Administrator in D:\Workspaces\idea_demo\springboot_demo)
+2020-06-15 15:50:53.577 DEBUG[main]com.springboot_demo.springboot_demoApplication[logStarting:56] -Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-06-15 15:50:53.578 INFO [main]com.springboot_demo.springboot_demoApplication[logStartupProfileInfo:651] -No active profile set, falling back to default profiles: default
+2020-06-15 15:50:54.049 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[multipleStoresDetected:249] -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-15 15:50:54.050 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[registerRepositoriesIn:127] -Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-15 15:50:54.067 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[registerRepositoriesIn:187] -Finished Spring Data repository scanning in 11ms. Found 0 JPA repository interfaces.
+2020-06-15 15:50:54.077 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[multipleStoresDetected:249] -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-15 15:50:54.078 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[registerRepositoriesIn:127] -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-15 15:50:54.085 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[registerRepositoriesIn:187] -Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-06-15 15:50:54.434 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer[initialize:108] -Tomcat initialized with port(s): 8096 (http)
+2020-06-15 15:50:54.440 INFO [main]org.apache.coyote.http11.Http11NioProtocol[log:173] -Initializing ProtocolHandler ["http-nio-8096"]
+2020-06-15 15:50:54.440 INFO [main]org.apache.catalina.core.StandardService[log:173] -Starting service [Tomcat]
+2020-06-15 15:50:54.440 INFO [main]org.apache.catalina.core.StandardEngine[log:173] -Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-15 15:50:54.513 INFO [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173] -Initializing Spring embedded WebApplicationContext
+2020-06-15 15:50:54.514 INFO [main]o.s.b.w.s.context.ServletWebServerApplicationContext[prepareWebApplicationContext:285] -Root WebApplicationContext: initialization completed in 903 ms
+2020-06-15 15:50:54.613 INFO [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor[initialize:181] -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-15 15:50:54.618 INFO [main]com.zaxxer.hikari.HikariDataSource[getConnection:110] -HikariPool-1 - Starting...
+2020-06-15 15:50:54.692 INFO [main]com.zaxxer.hikari.HikariDataSource[getConnection:123] -HikariPool-1 - Start completed.
+2020-06-15 15:50:54.721 INFO [task-1]org.hibernate.jpa.internal.util.LogHelper[logPersistenceUnitInformation:31] -HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-15 15:50:54.738 WARN [main]o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:220] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-15 15:50:54.819 INFO [task-1]org.hibernate.Version[logVersion:44] -HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-15 15:50:54.904 INFO [task-1]org.hibernate.annotations.common.Version[<clinit>:49] -HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-15 15:50:55.014 INFO [task-1]org.hibernate.dialect.Dialect[<init>:172] -HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2020-06-15 15:50:55.021 WARN [task-1]org.hibernate.dialect.Oracle9Dialect[<init>:58] -HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2020-06-15 15:50:55.024 WARN [task-1]org.hibernate.dialect.OracleDialect[<init>:39] -HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2020-06-15 15:50:55.094 ERROR[task-1]o.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl[sequenceInformationList:420] -Could not fetch the SequenceInformation from the database
+java.sql.SQLSyntaxErrorException: Table 'demo.all_sequences' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:42)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.sequenceInformationList(JdbcEnvironmentImpl.java:403)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:268)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-06-15 15:50:55.194 INFO [task-1]o.h.e.t.jta.platform.internal.JtaPlatformInitiator[initiateService:52] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-15 15:50:55.205 INFO [task-1]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:416] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-15 15:50:55.303 INFO [main]org.apache.coyote.http11.Http11NioProtocol[log:173] -Starting ProtocolHandler ["http-nio-8096"]
+2020-06-15 15:50:55.317 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer[start:220] -Tomcat started on port(s): 8096 (http) with context path ''
+2020-06-15 15:50:55.318 INFO [main]o.s.d.r.config.DeferredRepositoryInitializationListener[onApplicationEvent:49] -Triggering deferred initialization of Spring Data repositories…
+2020-06-15 15:50:55.319 INFO [main]o.s.d.r.config.DeferredRepositoryInitializationListener[onApplicationEvent:53] -Spring Data repositories initialized!
+2020-06-15 15:50:55.324 INFO [main]com.springboot_demo.springboot_demoApplication[logStarted:61] -Started springboot_demoApplication in 2.101 seconds (JVM running for 2.59)
+2020-06-15 15:51:59.511 INFO [main]com.springboot_demo.springboot_demoApplication[logStarting:55] -Starting springboot_demoApplication on DESKTOP-19DVIFM with PID 13940 (D:\Workspaces\idea_demo\springboot_demo\target\classes started by Administrator in D:\Workspaces\idea_demo\springboot_demo)
+2020-06-15 15:51:59.513 DEBUG[main]com.springboot_demo.springboot_demoApplication[logStarting:56] -Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-06-15 15:51:59.513 INFO [main]com.springboot_demo.springboot_demoApplication[logStartupProfileInfo:651] -No active profile set, falling back to default profiles: default
+2020-06-15 15:51:59.976 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[multipleStoresDetected:249] -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-15 15:51:59.976 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[registerRepositoriesIn:127] -Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-15 15:51:59.992 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[registerRepositoriesIn:187] -Finished Spring Data repository scanning in 10ms. Found 0 JPA repository interfaces.
+2020-06-15 15:52:00.002 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[multipleStoresDetected:249] -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-15 15:52:00.004 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[registerRepositoriesIn:127] -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-15 15:52:00.011 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[registerRepositoriesIn:187] -Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-06-15 15:52:00.346 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer[initialize:108] -Tomcat initialized with port(s): 8096 (http)
+2020-06-15 15:52:00.352 INFO [main]org.apache.coyote.http11.Http11NioProtocol[log:173] -Initializing ProtocolHandler ["http-nio-8096"]
+2020-06-15 15:52:00.353 INFO [main]org.apache.catalina.core.StandardService[log:173] -Starting service [Tomcat]
+2020-06-15 15:52:00.353 INFO [main]org.apache.catalina.core.StandardEngine[log:173] -Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-15 15:52:00.426 INFO [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173] -Initializing Spring embedded WebApplicationContext
+2020-06-15 15:52:00.426 INFO [main]o.s.b.w.s.context.ServletWebServerApplicationContext[prepareWebApplicationContext:285] -Root WebApplicationContext: initialization completed in 881 ms
+2020-06-15 15:52:00.523 INFO [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor[initialize:181] -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-15 15:52:00.528 INFO [main]com.zaxxer.hikari.HikariDataSource[getConnection:110] -HikariPool-1 - Starting...
+2020-06-15 15:52:00.604 INFO [main]com.zaxxer.hikari.HikariDataSource[getConnection:123] -HikariPool-1 - Start completed.
+2020-06-15 15:52:00.633 INFO [task-1]org.hibernate.jpa.internal.util.LogHelper[logPersistenceUnitInformation:31] -HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-15 15:52:00.649 WARN [main]o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:220] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-15 15:52:00.732 INFO [task-1]org.hibernate.Version[logVersion:44] -HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-15 15:52:00.813 INFO [task-1]org.hibernate.annotations.common.Version[<clinit>:49] -HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-15 15:52:00.879 INFO [task-1]org.hibernate.dialect.Dialect[<init>:172] -HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2020-06-15 15:52:00.882 WARN [task-1]org.hibernate.dialect.Oracle9Dialect[<init>:58] -HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2020-06-15 15:52:00.883 WARN [task-1]org.hibernate.dialect.OracleDialect[<init>:39] -HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2020-06-15 15:52:00.917 ERROR[task-1]o.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl[sequenceInformationList:420] -Could not fetch the SequenceInformation from the database
+java.sql.SQLSyntaxErrorException: Table 'demo.all_sequences' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:42)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.sequenceInformationList(JdbcEnvironmentImpl.java:403)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:268)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-06-15 15:52:00.992 INFO [task-1]o.h.e.t.jta.platform.internal.JtaPlatformInitiator[initiateService:52] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-15 15:52:00.997 INFO [task-1]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:416] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-15 15:52:01.108 INFO [main]org.apache.coyote.http11.Http11NioProtocol[log:173] -Starting ProtocolHandler ["http-nio-8096"]
+2020-06-15 15:52:01.124 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer[start:220] -Tomcat started on port(s): 8096 (http) with context path ''
+2020-06-15 15:52:01.125 INFO [main]o.s.d.r.config.DeferredRepositoryInitializationListener[onApplicationEvent:49] -Triggering deferred initialization of Spring Data repositories…
+2020-06-15 15:52:01.126 INFO [main]o.s.d.r.config.DeferredRepositoryInitializationListener[onApplicationEvent:53] -Spring Data repositories initialized!
+2020-06-15 15:52:01.132 INFO [main]com.springboot_demo.springboot_demoApplication[logStarted:61] -Started springboot_demoApplication in 1.927 seconds (JVM running for 2.401)
+2020-06-15 15:52:32.440 INFO [main]com.springboot_demo.springboot_demoApplication[logStarting:55] -Starting springboot_demoApplication on DESKTOP-19DVIFM with PID 8384 (D:\Workspaces\idea_demo\springboot_demo\target\classes started by Administrator in D:\Workspaces\idea_demo\springboot_demo)
+2020-06-15 15:52:32.444 DEBUG[main]com.springboot_demo.springboot_demoApplication[logStarting:56] -Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-06-15 15:52:32.444 INFO [main]com.springboot_demo.springboot_demoApplication[logStartupProfileInfo:651] -No active profile set, falling back to default profiles: default
+2020-06-15 15:52:32.978 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[multipleStoresDetected:249] -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-15 15:52:32.979 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[registerRepositoriesIn:127] -Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-15 15:52:32.994 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[registerRepositoriesIn:187] -Finished Spring Data repository scanning in 10ms. Found 0 JPA repository interfaces.
+2020-06-15 15:52:33.009 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[multipleStoresDetected:249] -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-15 15:52:33.010 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[registerRepositoriesIn:127] -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-15 15:52:33.019 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate[registerRepositoriesIn:187] -Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+2020-06-15 15:52:33.362 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer[initialize:108] -Tomcat initialized with port(s): 8096 (http)
+2020-06-15 15:52:33.367 INFO [main]org.apache.coyote.http11.Http11NioProtocol[log:173] -Initializing ProtocolHandler ["http-nio-8096"]
+2020-06-15 15:52:33.368 INFO [main]org.apache.catalina.core.StandardService[log:173] -Starting service [Tomcat]
+2020-06-15 15:52:33.368 INFO [main]org.apache.catalina.core.StandardEngine[log:173] -Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-15 15:52:33.454 INFO [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173] -Initializing Spring embedded WebApplicationContext
+2020-06-15 15:52:33.455 INFO [main]o.s.b.w.s.context.ServletWebServerApplicationContext[prepareWebApplicationContext:285] -Root WebApplicationContext: initialization completed in 966 ms
+2020-06-15 15:52:33.576 INFO [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor[initialize:181] -Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-15 15:52:33.581 INFO [main]com.zaxxer.hikari.HikariDataSource[getConnection:110] -HikariPool-1 - Starting...
+2020-06-15 15:52:33.659 INFO [main]com.zaxxer.hikari.HikariDataSource[getConnection:123] -HikariPool-1 - Start completed.
+2020-06-15 15:52:33.687 INFO [task-1]org.hibernate.jpa.internal.util.LogHelper[logPersistenceUnitInformation:31] -HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-15 15:52:33.703 WARN [main]o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration[openEntityManagerInViewInterceptor:220] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-15 15:52:33.717 INFO [task-1]org.hibernate.Version[logVersion:44] -HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-15 15:52:33.874 INFO [task-1]org.hibernate.annotations.common.Version[<clinit>:49] -HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-15 15:52:33.941 INFO [task-1]org.hibernate.dialect.Dialect[<init>:172] -HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-15 15:52:34.044 INFO [task-1]o.h.e.t.jta.platform.internal.JtaPlatformInitiator[initiateService:52] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-15 15:52:34.049 INFO [task-1]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean[buildNativeEntityManagerFactory:416] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-15 15:52:34.163 INFO [main]org.apache.coyote.http11.Http11NioProtocol[log:173] -Starting ProtocolHandler ["http-nio-8096"]
+2020-06-15 15:52:34.178 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer[start:220] -Tomcat started on port(s): 8096 (http) with context path ''
+2020-06-15 15:52:34.179 INFO [main]o.s.d.r.config.DeferredRepositoryInitializationListener[onApplicationEvent:49] -Triggering deferred initialization of Spring Data repositories…
+2020-06-15 15:52:34.179 INFO [main]o.s.d.r.config.DeferredRepositoryInitializationListener[onApplicationEvent:53] -Spring Data repositories initialized!
+2020-06-15 15:52:34.185 INFO [main]com.springboot_demo.springboot_demoApplication[logStarted:61] -Started springboot_demoApplication in 2.078 seconds (JVM running for 2.56)
